@@ -46,6 +46,12 @@ button:hover {
   font-size: 24px;
 }
 
+.Article2 {
+  margin: 20px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 24px;
+}
 p {
   flex: 1;
   margin-right: 15px;
@@ -123,13 +129,38 @@ h2 {
     max-width: 100%; 
   }
 
-  .flex-container {
-    grid-template-columns: repeat(2, 1fr);
-    width: 90%;
-    height: auto; 
+  .Article2 .flex-item {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .Article2 .flex-item {
+    max-width: 100%; 
   }
 
   .flex-item {
     font-size: 20px; 
   }
+
+  .flex-item img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+  }
+  .flex-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .flex-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  
+  }
 }
+
+
